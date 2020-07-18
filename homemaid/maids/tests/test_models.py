@@ -5,7 +5,7 @@ from unittest.mock import MagicMock
 from django.test import TestCase
 from django.core.files import File
 
-from .models import Maid
+from ..models import Maid
 
 
 class TestMaid(TestCase):
