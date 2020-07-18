@@ -23,4 +23,4 @@ class TestFizzBuzz(unittest.TestCase):
         result = fizzbuzz(450)
         self.assertEqual(result, 'FizzBuzz')
 
-unittest.main()
+# unittest.main()

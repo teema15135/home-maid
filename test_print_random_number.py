@@ -23,4 +23,4 @@ class TestPrintRandomNumber(unittest.TestCase):
         self.assertEqual(result, 'five')
 
 
-unittest.main()
+# unittest.main()
