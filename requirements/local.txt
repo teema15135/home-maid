@@ -1,3 +1,5 @@
+-r base.txt
+
 asgiref==3.2.10
 attrs==19.3.0
 Django==3.0.8
