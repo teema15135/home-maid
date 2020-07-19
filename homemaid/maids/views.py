@@ -51,7 +51,6 @@ class MaidListAPIView(APIView):
 
 
 def maid_another_list_view(request):
-    print(dir(request))
     template_name = 'maid_list.html'
     context = {
         'maid_list': Maid.objects.all()
