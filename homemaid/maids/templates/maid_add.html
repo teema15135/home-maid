@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block title %}Maid List{% endblock %}
+
+{% block content %}
+    <form action="." method="POST">
+        <table>
+            {% csrf_token %}
+            {{ form }}
+        </table>
+        <button class="btn btn-primary" type="submit">Submit</button>
+    </form>
+{% endblock %}

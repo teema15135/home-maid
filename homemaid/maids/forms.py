@@ -12,4 +12,6 @@ from .models import Maid
 class MaidForm(ModelForm):
     class Meta:
         model = Maid
-        fields = ('name', )
+        fields = (
+            'name',
+        )
