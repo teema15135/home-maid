@@ -8,6 +8,7 @@ from rest_framework.response import Response
 
 from .models import Maid
 from .forms import MaidForm
+from .serializer import MaidSerializer
 
 
 class MaidListView(View):
@@ -47,7 +48,9 @@ class MaidAddView(View):
 
 class MaidListAPIView(APIView):
     def get(self, request):
-        return Response()
+        maids = Maid.objects.all()
+        serializer = MaidSerializer(maids, many=True)
+        return Response(serializer.data)
 
 
 def maid_another_list_view(request):
