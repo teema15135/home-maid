@@ -1,6 +1,9 @@
+# Environments
 __pycache__
 env
+
+# Databases
 *.sqlite3
-*.png
-*.jpg
-*.jpeg
+
+# Images
+media/
