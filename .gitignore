@@ -1,3 +1,6 @@
 __pycache__
 env
 *.sqlite3
+*.png
+*.jpg
+*.jpeg
