@@ -3,6 +3,9 @@ from django.shortcuts import render
 from django.http import HttpResponse
 from django.views import View
 
+from rest_framework.views import APIView
+from rest_framework.response import Response
+
 from .models import Maid
 from .forms import MaidForm
 
@@ -40,6 +43,12 @@ class MaidAddView(View):
             fail_silently=False
         )
         return HttpResponse()
+
+
+class MaidListAPIView(APIView):
+    def get(self, request):
+        return Response()
+
 
 def maid_another_list_view(request):
     print(dir(request))
