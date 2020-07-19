@@ -2,6 +2,7 @@ import os
 from datetime import date
 from unittest.mock import MagicMock
 
+from django.conf import settings
 from django.test import TestCase
 from django.core.files import File
 
@@ -49,7 +50,7 @@ class TestMaid(TestCase):
         # Then
         assert maid.profile_image.name == 'profile.png'
 
-        os.remove('profile.png')
+        os.remove(os.path.join(settings.MEDIA_ROOT, 'profile.png'))
 
     def test_model_should_have_created_and_updated_fields(self):
         # Given
