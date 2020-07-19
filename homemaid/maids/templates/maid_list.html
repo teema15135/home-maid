@@ -1,12 +1,11 @@
-<html>
-  <head>
+{% extends 'base.html' %}
 
-  </head>
-  <body>
-    <ul>
-      {% for maid in maid_list %}
-        <li>{{ maid.name }}</li>
-      {% endfor %}
-    </ul>
-  </body>
-</html>
+{% block title %}Maid List{% endblock %}
+
+{% block content %}
+  <ul>
+    {% for maid in maid_list %}
+      <li>{{ maid.name }}</li>
+    {% endfor %}
+  </ul>
+{% endblock %}
